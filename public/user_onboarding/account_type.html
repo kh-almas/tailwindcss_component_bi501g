@@ -10,13 +10,15 @@
     <body>
         <section>
             <div class="bg-black">
-                <div class="grid grid-cols-3 p-4">
-                    <div class="col-span-1">
-                        <div class="bg-orange-500 text-white p-5">
+                <div class="grid grid-cols-3">
+                    <div class="col-span-1 h-100 primary-color">
+                        <div class=" text-white p-10">
                             <div>
-                                <h1 class="text-3xl py-4">Your selected plan</h1>
-                                <p>30-day free trial</p>
-                                <div class="p-2">
+                                <div class="mb-5">
+                                    <h1 class="text-3xl py-4">Your selected plan</h1>
+                                    <p>30-day free trial</p>
+                                </div>
+                                <div class="primary-card-color rounded-lg p-6 shadow-xl">
                                     <div class="flex p-2">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                                         <p class="pl-2">Individual configuration</p>
@@ -69,6 +71,30 @@
                                 <h1 class="text-2xl mb-8">Tell us about yourself</h1>
                                 <p class="pb-4">What is your profession?</p>
                             </div>
+                            <div>
+
+                                <form class="w-full py-5">
+                                    <div class="pb-3">
+                                        <input class="hidden profession" id="radio_1" type="radio" name="radio" checked>
+                                        <label class="flex flex-col bg-gray-900 p-4 border-2 border-gray-700 cursor-pointer" for="radio_1">
+                                            <div class="flex justify-between">
+                                                <span class="text-xs font-semibold uppercase">I’m a Designer</span>
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="pb-3">
+                                        <input class="hidden profession" id="radio_2" type="radio" name="radio">
+                                        <label class="flex flex-col bg-gray-900 p-4 border-2 border-gray-700 cursor-pointer" for="radio_2">
+                                            <div class="flex justify-between">
+                                                <span class="text-xs font-semibold uppercase">I’M A DEVELOPER</span>
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <button class="primary-color py-2 px-8 w-full">Next: Account Info</button>
+                                </form>
+                            </div>
                             <div class="flex">
                                 <p>Already have an account? </p>
                                 <a href="#" class="ml-1">Login here.</a>
@@ -78,5 +104,17 @@
                 </div>
             </div>
         </section>
+
+
+
+        <div>
+            <div class="">
+
+                <!-- Component Start -->
+
+                <!-- Component End  -->
+
+            </div>
+        </div>
     </body>
 </html>
